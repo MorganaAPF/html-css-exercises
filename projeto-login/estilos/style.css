@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
-    Paleta de cores
-    Verde: #49a09d
-    Lilás: #5f2c82
-*/
-
 :root {
     --verde: #49a09d;
     --lilas: #5f2c82;
@@ -41,6 +35,8 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     border-radius: 20px;
     overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -53,4 +49,13 @@ section#login > div#imagem {
 section#login > div#formulario {
     padding: 10px;
     display: block;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
