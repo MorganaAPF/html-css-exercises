@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+div#container {
+    display: grid;
+    grid-template: 1.5fr 1fr 4fr 1fr / 1fr 2fr 1fr;
+    gap: 5px;
+    padding: 8px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.item {
+    border: 2px dotted blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topo {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+#menu {
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+#principal {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+#secundario {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#rodape {
+    grid-area: 4 / 1 / 5 / 4;
+}
